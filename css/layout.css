@@ -1,0 +1,64 @@
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .loja-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .loja-card img {
+    margin-bottom: 10px;
+  }
+}
+
+/* ==========================
+   MUITO PEQUENO (smartphones menores)
+========================== */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .cat-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cat-card p {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.2rem;
+  }
+  
+  .footer-item span {
+    font-size: 0.75rem;
+  }
+}

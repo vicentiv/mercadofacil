@@ -1,0 +1,184 @@
+*{ margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+ body {
+  width: 100%;
+  padding-bottom: 100px; /* espaço pro footer */
+  background: #f7f7f7;
+}
+
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #ff4d4d;
+    }
+
+    nav button {
+      padding: .6rem 1.2rem;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: .9rem;
+      transition: .3s;
+    }
+
+    nav button:hover {
+      background: #e63b3b;
+    }
+
+    /* SEARCH BAR */
+    .search {
+      margin: 1.5rem auto;
+      width: 90%;
+      max-width: 500px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .search input {
+      flex: 1;
+      padding: .9rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .search button {
+      padding: .9rem 1.2rem;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* CATEGORIES */
+    .categories {
+      margin: 2rem auto;
+      width: 90%;
+    }
+
+    .categories h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .cat-list {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .cat-item {
+      min-width: 120px;
+      height: 120px;
+      background: white;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .cat-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* MARKET LIST */
+    .markets {
+      width: 90%;
+      margin: 2rem auto;
+    }
+
+    .markets h2 {
+      margin-bottom: .8rem;
+    }
+
+    .market-card {
+      width: 100%;
+      background: white;
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .market-card:hover {
+      transform: scale(1.02);
+    }
+
+    .market-img {
+      width: 90px;
+      height: 90px;
+      background: #ddd;
+      border-radius: 12px;
+    }
+
+    .market-info h3 {
+      font-size: 1.2rem;
+    }
+
+    .market-info p {
+      font-size: .9rem;
+      color: #555;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav h1 {
+        font-size: 1.3rem;
+      }
+
+      .market-card {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .market-img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    
+    footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+  font-size: .9rem;
+  z-index: 20;
+}
