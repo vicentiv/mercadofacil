@@ -26,12 +26,13 @@
         <div class="cat-item">🍞 Padaria</div>
         <div class="cat-item">🍪 Snacks</div>
         <div class="cat-item">🧴 Higiene</div>
+        <div class="cat-item">👗 Moda</div>
       </div>
     </section>
 
     <section class="markets">
       <h2>Mercados Próximos</h2>
-      <div class="market-card">
+      <div class="market-card" data-loja="farmacia">
         <div class="market-img">
           <img src="imgs/farmaconde.png" alt="Farma Conde" />
         </div>
@@ -41,23 +42,83 @@
         </div>
       </div>
 
-      <div class="market-card">
+      <div class="market-card" data-loja="padaria">
         <div class="market-img">
           <img src="imgs/hercules.png" alt="Mercado Soares" />
         </div>
         <div class="market-info">
-          <h3>Mercado Soares</h3>
+          <h3>Mercado Hercules</h3>
           <p>Aberto • Frete baixo</p>
         </div>
       </div>
 
-      <div class="market-card">
+      <div class="market-card" data-loja="papelaria">
         <div class="market-img">
-          <img src="imgs/anaclara.png" alt="Mercadão do Bairro" />
+          <img src="imgs/anaclara.png" alt="papelaria ana Clara" />
         </div>
         <div class="market-info">
           <h3>Ana Clara Papelaria</h3>
+          <p>Aberto • 10%Off</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="açogue">
+        <div class="market-img">
+          <img src="imgs/casadecarnes.png" alt="casa de carnes Magnífica" />
+        </div>
+        <div class="market-info">
+          <h3>Casa de Carnes Magnífica</h3>
           <p>Aberto • Frete baixo</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="supermercado">
+        <div class="market-img">
+          <img src="imgs/semprevale.png" alt="sempre vale supermercados" />
+        </div>
+        <div class="market-info">
+          <h3>Sempre vale supermercados</h3>
+          <p>Fechado • Abre as 13:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="petshop">
+        <div class="market-img">
+          <img src="imgs/petshop.png" alt="petshop azulão" />
+        </div>
+        <div class="market-info">
+          <h3>Petshop Azulão</h3>
+          <p>Aberto • promoções Para primeira compra</p>
+        </div>
+      </div>
+
+      <div class="market-card">
+        <div class="market-img" data-loja="hortifruti">
+          <img src="imgs/Hortifruti.png" alt="Hortifruti bela vista" />
+        </div>
+        <div class="market-info">
+          <h3>Hortifruti Bela vista</h3>
+          <p>aberto • fecha as 15:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="roupas">
+        <div class="market-img">
+          <img src="imgs/amandinha.png" alt="loja de roupas amandinha modas" />
+        </div>
+        <div class="market-info">
+          <h3>amandinha Modas</h3>
+          <p>aberto • Abre as 13:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="sorveteria">
+        <div class="market-img">
+          <img src="imgs/açai.png" alt="sorveteria" />
+        </div>
+        <div class="market-info">
+          <h3>sorveteria Oh Açaí</h3>
+          <p>aberto • Abre as 13:00</p>
         </div>
       </div>
     </section>
@@ -84,5 +145,17 @@
       </a>
     </footer>
     © 2025 — Todos os direitos reservados.
+    <!-- MODAL DO CATÁLOGO --><!-- MODAL DO CATÁLOGO -->
+<div id="catalogModal" class="catalog-modal">
+  <div class="catalog-content">
+    <span id="closeCatalog" class="close-btn">&times;</span>
+
+    <h2 id="catalogTitle">Catálogo</h2>
+
+    <div class="product-list"></div>
+  </div>
+</div>
+
+<script src="home.js"></script>
   </body>
 </html>
