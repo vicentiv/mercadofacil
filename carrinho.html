@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/imports.css" />
+    <title>Carrinho</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .cart-item {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 12px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .cart-item img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .cart-info {
+        flex: 1;
+      }
+
+      .cart-info h4 {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .cart-info p {
+        margin: 4px 0;
+        color: #777;
+      }
+
+      .qty-controls {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .qty-btn {
+        background: #ff3b3b;
+        color: white;
+        border: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .remove-btn {
+        background: #444;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-left: 10px;
+        border: none;
+      }
+
+      #total {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Seu Carrinho</h2>
+    <div id="cartContainer"></div>
+
+    <p id="total">Total: R$ 0,00</p>
+    <div class="button-wrapper">
+  <button class="pay-btn" id="payBtn">
+    <span>Pagar</span>
+  </button>
+
+  <div id="confettiAround"></div>
+</div>
+
+
+    <footer class="footer">
+      <a href="home.html" class="footer-item">
+        <i class="icon">🏠</i>
+        <span>Início</span>
+      </a>
+
+      <a href="carrinho.html" class="footer-item">
+        <i class="icon">🛒</i>
+        <span>Carrinho</span>
+      </a>
+
+      <a href="pedidos.html" class="footer-item">
+        <i class="icon">📦</i>
+        <span>Pedidos</span>
+      </a>
+
+      <a href="#" class="footer-item">
+        <i class="icon">👤</i>
+        <span>Perfil</span>
+      </a>
+    </footer>
+    <script src="carrinho.js"></script>
+  </body>
+</html>

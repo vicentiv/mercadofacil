@@ -1,0 +1,30 @@
+.pedido-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.produto {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.produto img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.status {
+  background: #00a2ff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
