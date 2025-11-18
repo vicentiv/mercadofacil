@@ -1,39 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Mercado Fácil Local</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    
-    <!-- Metade colorida ou com imagem -->
-    <div class="left-side">
-      <div class="content">
-        <img src="imgs/logo.png" alt="Logo Mercado Fácil Local" class="logo">
-        <h1>Mercado Fácil Local</h1>
-        <p> Compre rápido, receba no conforto de casa.</p>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/imports.css" />
+    <title>Home | Mercado Fácil Local</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Mercado Fácil</h1>
+      <button>Perfil</button>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder="Buscar produtos ou mercados..." />
+      <button>Buscar</button>
     </div>
 
-    <!-- Metade com formulário -->
-    <div class="right-side">
-      <div class="login-box">
-        <h2>Login</h2>
-        <form>
-          <input type="email" placeholder="E-mail" required>
-          <input type="password" placeholder="Senha" required>
-          <button type="submit">Entrar</button>
-        </form>
-        <p class="links">
-          <a href="#">Esqueceu a senha?</a><br>
-          <a href="#">Criar conta</a>
-        </p>
+    <section class="categories">
+      <h2>Categorias</h2>
+      <div class="cat-list">
+        <div class="cat-item">⭐melhores<br>avaliações</div>
+        <div class="cat-item">🍎 Hortifruti</div>
+        <div class="cat-item">🥩 Carnes</div>
+        <div class="cat-item">🥛 Laticínios</div>
+        <div class="cat-item">🍞 Padaria</div>
+        <div class="cat-item">🧴 Higiene</div>
+        <div class="cat-item">👗 Moda</div>
       </div>
-    </div>
+    </section>
 
+    <section class="markets">
+      <h2>Mercados Próximos</h2>
+      <div class="market-card" data-loja="farmacia">
+        <div class="market-img">
+          <img src="assets/imgs/farmaconde.png" alt="Farma Conde" />
+        </div>
+        <div class="market-info">
+          <h3>Farma Conde</h3>
+          <p>Aberto • Entrega rápida</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="padaria">
+        <div class="market-img">
+          <img src="assets/imgs/hercules.png" alt="Panificadora Hercules" />
+        </div>
+        <div class="market-info">
+          <h3>Panificadora Hercules</h3>
+          <p>Aberto • Frete baixo</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="papelaria">
+        <div class="market-img">
+          <img src="assets/imgs/anaclara.png" alt="papelaria ana Clara" />
+        </div>
+        <div class="market-info">
+          <h3>Ana Clara Papelaria</h3>
+          <p>Aberto • 10%Off</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="açogue">
+        <div class="market-img">
+          <img src="assets/imgs/casadecarnes.png" alt="casa de carnes Magnífica" />
+        </div>
+        <div class="market-info">
+          <h3>Casa de Carnes Magnífica</h3>
+          <p>Aberto • Frete baixo</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="supermercado">
+        <div class="market-img">
+          <img src="assets/imgs/semprevale.png" alt="sempre vale supermercados" />
+        </div>
+        <div class="market-info">
+          <h3>Sempre vale supermercados</h3>
+          <p>Fechado • Abre as 13:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="petshop">
+        <div class="market-img">
+          <img src="assets/imgs/petshop.png" alt="petshop azulão" />
+        </div>
+        <div class="market-info">
+          <h3>Petshop Azulão</h3>
+          <p>Aberto • promoções Para primeira compra</p>
+        </div>
+      </div>
+
+   <div class="market-card" data-loja="lojadefrutas">
+        <div class="market-img">
+          <img src="assets/imgs/Hortifruti.png" alt="hortifruti" />
+        </div>
+        <div class="market-info">
+          <h3>hortifruti bela vista</h3>
+          <p>aberto • Abre as 13:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="roupas">
+        <div class="market-img">
+          <img src="assets/imgs/amandinha.png" alt="loja de roupas amandinha modas" />
+        </div>
+        <div class="market-info">
+          <h3>amandinha Modas</h3>
+          <p>aberto • Abre as 13:00</p>
+        </div>
+      </div>
+
+      <div class="market-card" data-loja="sorveteria">
+        <div class="market-img">
+          <img src="assets/imgs/sorveteria.png" alt="sorveteria" />
+        </div>
+        <div class="market-info">
+          <h3>sorveteria Oh Açaí</h3>
+          <p>aberto • Abre as 13:00</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="#" class="footer-item">
+        <i class="icon">🏠</i>
+        <span>Início</span>
+      </a>
+
+      <a href="/assets/carrinho.html" class="footer-item">
+        <i class="icon">🛒</i>
+        <span>Carrinho</span>
+      </a>
+
+      <a href="#" class="footer-item">
+        <i class="icon">👤</i>
+        <span>Perfil</span>
+      </a>
+    </footer>
+    © 2025 — Todos os direitos reservados.
+    <!-- MODAL DO CATÁLOGO --><!-- MODAL DO CATÁLOGO -->
+<div id="catalogModal" class="catalog-modal">
+  <div class="catalog-content">
+    <span id="closeCatalog" class="close-btn">&times;</span>
+
+    <h2 id="catalogTitle">Catálogo</h2>
+
+    <div class="product-list"></div>
   </div>
-</body>
+</div>
+
+<script src="assets/home.js"></script>
+  </body>
 </html>
